@@ -195,10 +195,9 @@ export default function UNAHChamba() {
             </Button>
           )}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-unah-blue rounded-lg flex items-center justify-center relative">
-              <div className="w-4 h-4 bg-unah-yellow rounded-sm absolute -top-1 -left-1"></div>
-              <Briefcase className="w-4 h-4 text-white relative z-10" />
-            </div>
+          <div className="w-8 h-8 relative">
+            <img src="/logo.png" alt="UNAHChamba" className="w-full h-full object-contain" />
+          </div>
             <h1 className="text-lg font-bold text-unah-blue">{title}</h1>
           </div>
         </div>
@@ -260,9 +259,9 @@ export default function UNAHChamba() {
         </Button>
         <Button
           variant="ghost"
-          onClick={() => setCurrentView("profile")}
+          onClick={() => setCurrentView("public-profile")}
           className={`flex flex-col items-center space-y-1 p-2 ${
-            currentView === "profile" ? "text-unah-blue" : "text-gray-500"
+            currentView === "public-profile" ? "text-unah-blue" : "text-gray-500"
           }`}
         >
           <User className="w-5 h-5" />
@@ -278,10 +277,9 @@ export default function UNAHChamba() {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
         <Card className="w-full max-w-sm shadow-lg border-0">
           <CardHeader className="text-center space-y-4 pb-6">
-            <div className="mx-auto w-16 h-16 bg-unah-blue rounded-2xl flex items-center justify-center relative">
-              <div className="w-6 h-6 bg-unah-yellow rounded-sm absolute -top-2 -left-2"></div>
-              <Briefcase className="w-8 h-8 text-white relative z-10" />
-            </div>
+          <div className="mx-auto w-16 h-16 rounded-2xl flex items-center justify-center relative">
+            <img src="/logo.png" alt="UNAHChamba" className="w-full h-full object-contain" />
+          </div>
             <div>
               <CardTitle className="text-xl font-bold text-unah-blue mb-1">UNAHChamba</CardTitle>
               <p className="text-sm text-gray-600">
